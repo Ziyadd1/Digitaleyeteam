@@ -1,0 +1,190 @@
+/* الخط الأساسي والاتجاه */
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background-color: #fff;
+}
+
+/* شريط التنقل */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+/* الشعار */
+.logo {
+  font-size: 22px;
+  color: gold;
+  line-height: 1.3;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* محتوى الصفحة */
+.content {
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content h2 {
+  color: #000;
+  margin-top: 40px;
+  border-bottom: 2px solid gold;
+  padding-bottom: 10px;
+}
+
+.content p {
+  color: #333;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-top: 15px;
+}
+
+.content ul {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-right: 20px;
+  list-style-type: disc;
+}
+
+/* تذييل الموقع */
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* أزرار */
+.btn {
+  background-color: gold;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+  color: #000;
+}
+
+/* الفيديو */
+.video-gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero {
+  background: url('../images/hero-bg.jpg') no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.portfolio-hero {
+  background: url('../images/portfolio-bg.jpg') no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.portfolio-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-hero h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 36px;
+  color: gold;
+}
+
+.services-hero {
+  background: url('../images/services-bg.jpg') no-repeat center center / cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.services-hero h2 {
+  position: relative;
+  z-index: 2;
+  font-size: 36px;
+  color: gold;
+}
