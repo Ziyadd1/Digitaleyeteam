@@ -15,7 +15,7 @@
 ### الصفحة الرئيسية
 ![Hero Background]([[[images/hero-bg.jpg](https://github.com/Ziyadd1/Digitaleyeteam/blob/d28a233e8576bfaca2217fe05bf676f6489ad1d9/hero-bg.jpg)
 ### معرض الأعمال
-![Portfolio Background](images/portfolio-bg.jpg)
+![Portfolio Background][(images/portfolio-bg.jpg)](https://github.com/Ziyadd1/Digitaleyeteam/blob/307abb8c368afb9ca3a0a85c26afdcd51f00fee8/portfolio-bg.jpg)
 
 ### صفحة الخدمات
 ![Services Background](images/services-bg.jpg)
