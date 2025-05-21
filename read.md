@@ -13,13 +13,13 @@
 ## معاينة الواجهة
 
 ### الصفحة الرئيسية
-![Hero Background](https://raw.githubusercontent.com/Ziyadd1/Digitaleyeteam/main/images/hero-bg.jpg)
+![Hero Background](hero-bg.jpg)
 
 ### معرض الأعمال
-![Portfolio Background](https://raw.githubusercontent.com/Ziyadd1/Digitaleyeteam/main/images/portfolio-bg.jpg)
+![Portfolio Background](portfolio-bg.jpg)
 
 ### صفحة الخدمات
-![Services Background](https://raw.githubusercontent.com/Ziyadd1/Digitaleyeteam/main/images/services-bg.jpg)
+![Services Background](services-bg.jpg)
 
 ---
 
