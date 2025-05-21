@@ -13,8 +13,7 @@
 ## معاينة الواجهة
 
 ### الصفحة الرئيسية
-![Hero Background](images/hero-bg.jpg)
-
+![Hero Background]([[[images/hero-bg.jpg](https://github.com/Ziyadd1/Digitaleyeteam/blob/d28a233e8576bfaca2217fe05bf676f6489ad1d9/hero-bg.jpg)
 ### معرض الأعمال
 ![Portfolio Background](images/portfolio-bg.jpg)
 
