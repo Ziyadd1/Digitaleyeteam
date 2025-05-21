@@ -113,7 +113,7 @@ footer {
 }
 
 .hero {
-  background: url('images/hero-bg.jpg') no-repeat center center / cover;
+  background: url('hero-bg.jpg') no-repeat center center / cover;
   color: white;
   text-align: center;
   padding: 120px 20px;
@@ -146,7 +146,7 @@ footer {
 }
 
 .portfolio-hero {
-  background: url('images/portfolio-bg.jpg') no-repeat center center / cover;
+  background: url('portfolio-bg.jpg') no-repeat center center / cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -168,7 +168,7 @@ footer {
 }
 
 .services-hero {
-  background: url('images/services-bg.jpg') no-repeat center center / cover;
+  background: url('services-bg.jpg') no-repeat center center / cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
