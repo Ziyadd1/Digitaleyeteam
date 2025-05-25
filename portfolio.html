@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>أعمالنا – Digital Eye</title>
+  <meta name="description" content="اطّلع على أبرز مشاريع Digital Eye Team في التغطيات الإعلامية والتصوير والمونتاج.">
+  <title>أعمالنا – Digital Eye Team</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -13,29 +14,40 @@
     <nav class="navbar">
       <div class="logo">Digital Eye Team</div>
       <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <ul id="nav-menu">
+      <ul id="nav-menu" class="nav-menu">
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
-        <li><a href="portfolio.html">أعمالنا</a></li>
+        <li><a href="portfolio.html" class="active">أعمالنا</a></li>
         <li><a href="services.html">الخدمات</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="content" style="padding: 50px 20px; max-width: 1000px; margin: auto;">
-    <h2>أبرز أعمالنا</h2>
-    <ul style="list-style: none; padding: 0;">
+  <section class="content">
+    <h2 style="color: gold; margin-bottom: 20px;">نماذج من أعمالنا</h2>
+
+    <ul style="list-style: none; padding-right: 0;">
       <li><strong>فعالية عذق:</strong> تغطية شاملة من التصوير حتى التسويق.</li>
       <li><strong>بهجة وغبقة:</strong> إدارة وتنفيذ وتوثيق الحدث بالكامل.</li>
       <li><strong>رؤية 2030:</strong> تعاون إعلامي مع نادي الإعلام بجامعة الإمام.</li>
-      <li><strong>وزارة الدفاع، جامعة الإمام، وغيرها:</strong> تصوير وتوثيق باحترافية عالية.</li>
+      <li><strong>تغطيات خاصة:</strong> وزارة الدفاع، جامعة الإمام، والمزيد.</li>
     </ul>
 
     <div style="margin-top: 30px;">
-      <a class="btn" href="https://drive.google.com/drive/folders/1Jr95wM8Th7ppfD30EcUKXl8Cl1MiTW7tM?usp=share_link" target="_blank">
+      <a class="btn" href="https://drive.google.com/drive/folders/1Jr95wWW8Th7ppfDJ8CeUcXI8Ic1MITvM?usp=share_link" target="_blank">
         <i class="fas fa-folder-open"></i> معرض أعمالنا على Google Drive
       </a>
+    </div>
+
+    <div style="margin-top: 40px;" class="video-wrapper">
+      <iframe width="100%" height="400" 
+        src="https://www.youtube.com/embed/7tp9fA9-e9I" 
+        title="Digital Eye Team Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
