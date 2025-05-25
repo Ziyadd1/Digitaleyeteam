@@ -149,10 +149,13 @@ footer {
 }
 
 .portfolio-hero {
-  background: url('portfolio-bg.jpg') no-repeat center center / cover;
+  background: url('portfolio-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   position: relative;
 }
 
@@ -171,10 +174,13 @@ footer {
 }
 
 .services-hero {
-  background: url('services-bg.jpg') no-repeat center center / cover;
+  background: url('services-bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
   position: relative;
 }
 
