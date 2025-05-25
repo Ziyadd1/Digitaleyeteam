@@ -1,78 +1,51 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>من نحن - Digital Eye</title>
-
-  <!-- رابط ملف التصميم الخاص بك -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- رابط مكتبة التحريك AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>من نحن – Digital Eye</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <header>
-    <nav>
-  <h1 class="logo">Digital Eye Team <span class="tagLine">To the Future</span></h1>
-
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-  <ul id="nav-menu">
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="about.html">من نحن</a></li>
-    <li><a href="portfolio.html">أعمالنا</a></li>
-    <li><a href="services.html">الخدمات</a></li>
-    <li><a href="contact.html">اتصل بنا</a></li>
-  </ul>
-</nav>
+    <nav class="navbar">
+      <div class="logo">Digital Eye Team</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="portfolio.html">أعمالنا</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="content">
-    <section>
-      <h2>أهداف الشركة</h2>
-      <ul>
-        <li>بناء علامة تجارية قوية ومؤثرة</li>
-        <li>خلق هوية بصرية وصوتية تميزنا عن غيرنا</li>
-        <li>تعزيز ثقة العملاء وزيادة ولائهم</li>
-        <li>الوصول إلى أسواق عالمية متنوعة</li>
-        <li>فهم الثقافات وتكييف الحملات معها</li>
-        <li>استخدام استراتيجيات تسويق رقمي متقدمة</li>
-        <li>تحسين محركات البحث والإعلانات المدفوعة</li>
-        <li>الاستدامة والمسؤولية الاجتماعية</li>
-        <li>تحقيق رؤية 2030</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>قصتنا</h2>
-      <p>
-        بدأت قصتنا بطموح الأستاذ سعود، الذي كان يحمل شغفًا كبيرًا بالتصوير والمونتاج. في عام 2023، قرر تحويل هذا الشغف إلى واقع بتأسيس فريق إعلامي يشبه في هيكله الشركات المحترفة. رغم التحديات، واصل العمل والتطوير حتى وصلنا إلى فريق Digital Eye الذي يجمع بين الإبداع والالتزام.
-      </p>
-    </section>
-
-    <section>
-      <h2>رؤيتنا وشغفنا</h2>
-      <p>
-        نطمح أن نكون جزءًا من رؤية 2030، وأن نصنع أثرًا حقيقيًا في عالم الإعلام والتسويق. نؤمن أن العمل الجماعي والشغف هما طريقنا للتميز، ونسعى لتقديم محتوى يترك بصمة.
-      </p>
-    </section>
-  </main>
+  <section class="content" style="padding: 50px 20px; max-width: 900px; margin: auto;">
+    <h2>من نحن</h2>
+    <p>
+      Digital Eye Team هو فريق إبداعي انطلق بشغف من الأستاذ سعود في عام 2023، بهدف تقديم خدمات إعلامية عالية الجودة تشمل التصوير، المونتاج، التسويق، وصناعة الهوية البصرية.
+    </p>
+    <p>
+      بدأ الفريق كفكرة بسيطة أثناء الدراسة، لكنه نما ليضم أفرادًا موهوبين يعملون بروح واحدة لتحقيق رؤية طموحة تتماشى مع رؤية المملكة 2030.
+    </p>
+    <p>
+      نؤمن أن العمل بروح الفريق والشغف هو طريقنا لصناعة أثر حقيقي في عالم الإعلام الرقمي.
+    </p>
+  </section>
 
   <footer>
-    <p>© 2025 Digital Eye Team - جميع الحقوق محفوظة</p>
+    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
   </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-  
+
   <script>
-  function toggleMenu() {
-    const menu = document.getElementById('nav-menu');
-    menu.classList.toggle('active');
-  }
-</script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
