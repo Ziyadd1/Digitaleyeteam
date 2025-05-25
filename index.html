@@ -3,24 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="فريق Digital Eye المتخصص في التصوير، المونتاج، والتسويق الرقمي. نبصر ما لا يُرى.">
-  <meta name="keywords" content="Digital Eye, تصوير, مونتاج, تسويق, تصميم, السعودية, رؤية 2030">
-  <meta name="author" content="Digital Eye Team">
-  <title>Digital Eye Team – نبصر ما لا يُرى</title>
+  <meta name="description" content="Digital Eye Team - فريق إعلامي إبداعي يقدم خدمات التصوير والتسويق والتصميم.">
+  <title>الرئيسية | Digital Eye Team</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <!-- رأس الموقع -->
+  <!-- رأس الصفحة -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Digital Eye Team</div>
-      <button class="menu-toggle" aria-label="فتح القائمة" onclick="toggleMenu()">☰</button>
-      <ul id="nav-menu" class="nav-menu">
-        <li><a href="index.html">الرئيسية</a></li>
+    <div class="logo">Digital Eye Team</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html" class="active">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="portfolio.html">أعمالنا</a></li>
         <li><a href="services.html">الخدمات</a></li>
@@ -31,12 +27,11 @@
 
   <!-- قسم البطل -->
   <section class="hero">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h1>نبصر ما لا يُرى</h1>
-        <p>نصنع التأثير من خلال الإبداع البصري والتسويق الرقمي</p>
-        <a href="portfolio.html" class="btn">استعرض أعمالنا</a>
-      </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>نُبصر ما لا يُرى</h1>
+      <p>نصنع التأثير من خلال الإبداع البصري والتسويق الرقمي</p>
+      <a href="portfolio.html" class="btn">استعرض أعمالنا</a>
     </div>
   </section>
 
@@ -45,6 +40,7 @@
     <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
   </footer>
 
+  <!-- سكربت تفعيل القائمة في الجوال -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
