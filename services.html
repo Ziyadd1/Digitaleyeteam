@@ -3,58 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>خدماتنا - Digital Eye</title>
+  <title>خدماتنا – Digital Eye</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- رأس الصفحة -->
-  <nav>
-  <h1 class="logo">Digital Eye Team <span class="tagLine">To the Future</span></h1>
-  
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  
-  <ul id="nav-menu">
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="about.html">من نحن</a></li>
-    <li><a href="portfolio.html">أعمالنا</a></li>
-    <li><a href="services.html">الخدمات</a></li>
-    <li><a href="contact.html">اتصل بنا</a></li>
-  </ul>
-</nav>
-  <!-- قسم الهيرو -->
-  <section class="services-hero">
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Digital Eye Team</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="portfolio.html">أعمالنا</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content" style="padding: 50px 20px; max-width: 1000px; margin: auto;">
     <h2>خدماتنا</h2>
-    <p>نقدم مجموعة متكاملة من الخدمات الإعلامية والتصويرية لتلبية احتياجاتكم.</p>
-  </section>
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById('nav-menu');
-    menu.classList.toggle('active');
-  }
-</script>
-  <!-- محتوى الخدمات -->
-  <section class="services-content">
-    <div class="service">
-      <h3>التصوير الفوتوغرافي</h3>
-      <p>جلسات تصوير احترافية للمناسبات والمنتجات.</p>
-    </div>
-    <div class="service">
-      <h3>التصوير بالفيديو</h3>
-      <p>إنتاج فيديوهات عالية الجودة للترويج والتوثيق.</p>
-    </div>
-    <div class="service">
-      <h3>المونتاج والتحرير</h3>
-      <p>تحرير ومونتاج الفيديوهات باستخدام أحدث التقنيات.</p>
-    </div>
-    <div class="service">
-      <h3>إدارة وسائل التواصل</h3>
-      <p>إدارة حساباتكم على وسائل التواصل الاجتماعي بفعالية.</p>
-    </div>
+    <ul style="list-style: none; padding: 0;">
+      <li><strong>التصوير الاحترافي:</strong> تصوير فوتوغرافي وفيديو للأحداث والمؤسسات.</li>
+      <li><strong>المونتاج والإخراج:</strong> تحرير مرئي احترافي بإبداع فني عالي.</li>
+      <li><strong>تصميم الهوية البصرية:</strong> شعارات، ألوان، وخطوط متناسقة تميز علامتك.</li>
+      <li><strong>إدارة المحتوى:</strong> جدولة ونشر المحتوى بمنهجية متكاملة.</li>
+      <li><strong>التسويق الرقمي:</strong> حملات ترويجية عبر السوشيال ميديا بفعالية.</li>
+    </ul>
   </section>
 
-  <!-- تذييل الصفحة -->
   <footer>
-    <p>&copy; 2025 Digital Eye Team. جميع الحقوق محفوظة.</p>
+    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
