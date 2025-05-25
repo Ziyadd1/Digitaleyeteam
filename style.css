@@ -243,3 +243,26 @@ footer {
 .services-hero h2, .services-hero p {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
