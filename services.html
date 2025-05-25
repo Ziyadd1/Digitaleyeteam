@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="تعرف على خدمات Digital Eye Team في التصوير، المونتاج، التسويق، وتصميم الهوية البصرية.">
-  <title>خدماتنا – Digital Eye Team</title>
+  <meta name="description" content="تعرف على خدمات Digital Eye Team في التصوير، التسويق، والتصميم.">
+  <title>الخدمات | Digital Eye Team</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
+  <!-- رأس الصفحة -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Digital Eye Team</div>
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <ul id="nav-menu" class="nav-menu">
+    <div class="logo">Digital Eye Team</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul id="nav-menu">
         <li><a href="index.html">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="portfolio.html">أعمالنا</a></li>
@@ -24,19 +25,29 @@
     </nav>
   </header>
 
-  <section class="content">
-    <h2 style="color: gold; margin-bottom: 20px;">خدماتنا</h2>
-    <p>نقدم مجموعة شاملة من الخدمات الإعلامية والإبداعية التي تلبي احتياجات المؤسسات والأفراد.</p>
-
-    <ul style="list-style: none; padding-right: 0; margin-top: 25px;">
-      <li><strong>التصوير الاحترافي:</strong> تصوير فوتوغرافي وفيديو بأحدث التقنيات.</li>
-      <li><strong>المونتاج والإخراج:</strong> تحرير فيديوهات بأعلى جودة وبأسلوب بصري مميز.</li>
-      <li><strong>تصميم الهوية البصرية:</strong> شعارات، ألوان، خطوط، وأدلة استخدام احترافية.</li>
-      <li><strong>التسويق الرقمي:</strong> إدارة حملات إعلانية على جميع المنصات الرقمية.</li>
-      <li><strong>إدارة المحتوى:</strong> صياغة وجدولة منشورات ذات تأثير فعّال.</li>
-    </ul>
+  <!-- قسم الغلاف -->
+  <section class="services-hero">
+    <div class="services-overlay"></div>
+    <div class="services-content">
+      <h2>خدماتنا</h2>
+      <p>نقدّم حلولًا إبداعية شاملة في التصوير والتسويق وصناعة المحتوى.</p>
+    </div>
   </section>
 
+  <!-- تفاصيل الخدمات -->
+  <section style="padding: 60px 20px; max-width: 1000px; margin: auto;">
+    <ul style="list-style: none; padding-right: 0;">
+      <li><strong>التصوير الاحترافي:</strong> تغطية فوتوغرافية وفيديو بأعلى جودة.</li>
+      <li><strong>المونتاج والإخراج:</strong> إخراج مرئي احترافي للمناسبات والمشاريع.</li>
+      <li><strong>التسويق الرقمي:</strong> إدارة الحملات على منصات التواصل والإعلانات المدفوعة.</li>
+      <li><strong>تصميم الهوية البصرية:</strong> من الشعار إلى الأدلة البصرية المتكاملة.</li>
+      <li><strong>إدارة المحتوى:</strong> صياغة وجدولة منشورات ذات تأثير واحترافية.</li>
+    </ul>
+
+    <a href="contact.html" class="btn">ابدأ تعاونك معنا</a>
+  </section>
+
+  <!-- التذييل -->
   <footer>
     <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
   </footer>
