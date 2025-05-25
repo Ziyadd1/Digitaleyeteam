@@ -1,3 +1,8 @@
-hero-bg.jpg 
-portfolio-bg.jpg
-services-bg.jpg
+digitaleyeteam/
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    ├── hero-bg.jpg
+    ├── portfolio-bg.jpg
+    └── services-bg.jpg
