@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Digital Eye Team - فريق إعلامي إبداعي يقدم خدمات التصوير والتسويق والتصميم.">
   <title>الرئيسية | Digital Eye Team</title>
+  <meta name="description" content="فريق إعلامي إبداعي يقدم خدمات التصوير والتسويق الرقمي والتصميم الإبداعي">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- رأس الصفحة -->
   <header>
-    <div class="logo">Digital Eye Team</div>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Digital Eye Logo" class="logo-img" />
+      <div class="logo-text">Digital Eye Team</div>
+    </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav>
       <ul id="nav-menu">
@@ -35,12 +39,34 @@
     </div>
   </section>
 
-  <!-- تذييل -->
+  <!-- قسم الإعلانات -->
+  <section class="announcements">
+    <h2>📢 إعلاناتنا</h2>
+    <div class="announcement-box">
+      <div class="announcement-list" id="announcementList">
+        <div class="announcement-item">📌 انضمام فريق التصميم الجديد</div>
+        <div class="announcement-item">🚀 تغطيتنا لمعرض رؤية 2030 الأسبوع القادم</div>
+        <div class="announcement-item">🎥 إطلاق خدمة الفيديو الإبداعي قريبًا</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- زر واتساب -->
+  <a href="https://wa.me/966501234567" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- التذييل -->
   <footer>
-    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <p>© 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/digitaleyeteam" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/DigitalEyeTeam" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/digitaleyeteam" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 
-  <!-- سكربت تفعيل القائمة في الجوال -->
+  <!-- سكربت القائمة -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
