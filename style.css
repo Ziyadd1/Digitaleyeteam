@@ -204,9 +204,34 @@ footer {
 
 /* التجاوب للجوال */
 @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
+  .hero,
+  .portfolio-hero,
+  .services-hero {
+    background-size: cover;
+    background-position: center top;
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-content,
+  .portfolio-content,
+  .services-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-content h2,
+  .portfolio-content h2,
+  .services-content h2 {
+    font-size: 26px;
+  }
+
+  .hero-content p,
+  .portfolio-content p,
+  .services-content p {
+    font-size: 16px;
+  }
+}
   }
 
   nav ul {
