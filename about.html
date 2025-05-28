@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="قصة Digital Eye Team - فريق إعلامي بدأ من الشغف والطموح نحو الريادة.">
   <title>من نحن | Digital Eye Team</title>
+  <meta name="description" content="تعرف على فريق Digital Eye ورؤيته وقيمه">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- رأس الصفحة -->
   <header>
-    <div class="logo">Digital Eye Team</div>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Digital Eye Logo" class="logo-img" />
+      <div class="logo-text">Digital Eye Team</div>
+    </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav>
       <ul id="nav-menu">
@@ -25,24 +29,51 @@
     </nav>
   </header>
 
-  <!-- محتوى الصفحة -->
-  <section style="padding: 60px 20px; max-width: 1000px; margin: auto;">
-    <h2 style="margin-bottom: 20px;">قصتنا</h2>
-    <p style="margin-bottom: 20px;">
-      بدأت فكرة Digital Eye Team في عام 2023، حين قرر الأستاذ سعود أن يحوّل شغفه بالتصوير والمونتاج إلى فريق متكامل يشبه الشركات في هيكليته وتنظيمه. بالرغم من الصعوبات، أكمل الطريق بإصرار، وقدم العديد من المشاريع الإعلامية الناجحة.
-    </p>
-    <p style="margin-bottom: 20px;">
-      الفريق اليوم يتكوّن من مصورين، مسوقين، ومبدعين في صناعة المحتوى، ويطمح لأن يكون ضمن رؤية 2030 كقوة إعلامية سعودية مؤثرة.
-    </p>
-    <h2 style="margin-top: 40px; margin-bottom: 20px;">رؤيتنا</h2>
-    <p>
-      نصنع محتوى يليق بالمستقبل، ونؤمن أن العمل الجماعي وشغفنا بما نقدمه هو طريقنا نحو التميز في عالم الإعلام.
-    </p>
+  <!-- قسم من نحن -->
+  <section class="about-section">
+    <div class="about-container">
+      <h1>من نحن</h1>
+      <p>
+        Digital Eye Team هو فريق إعلامي سعودي طموح، أُسس بشغف لتقديم خدمات التصوير، التغطية، التسويق، والتصميم الإبداعي.
+        بدأت القصة من طموح الأستاذ سعود، الذي قرر عام 2023 تأسيس هذا الفريق، مؤمنًا بموهبته في التصوير والمونتاج،
+        رغم التحديات الدراسية والتضحيات، حتى استطاع تشكيل كيان إبداعي متخصص يجمع نخبة من المواهب.
+      </p>
+
+      <h2>رؤيتنا</h2>
+      <p>
+        أن نصبح من أبرز الفرق الإعلامية السعودية، ونسهم في تحقيق رؤية 2030 من خلال تطوير المحتوى الإعلامي المحلي،
+        وتقديم خدمات إبداعية بمعايير عالمية.
+      </p>
+
+      <h2>قيمنا</h2>
+      <ul>
+        <li>الإبداع والاحترافية</li>
+        <li>الالتزام والثقة</li>
+        <li>العمل الجماعي وروح الفريق</li>
+        <li>مواكبة التطور التقني والإعلامي</li>
+      </ul>
+
+      <h2>شغفنا</h2>
+      <p>
+        نؤمن أن كل مشروع ننفذه هو فرصة لخلق تجربة بصرية مؤثرة، وأن كل عضو بالفريق يساهم في صناعة قصة تُحكى بالصوت والصورة.
+        نطوّر أنفسنا باستمرار، ونطمح أن نضع بصمتنا في كل فعالية، حملة، أو إنتاج نقوم به.
+      </p>
+    </div>
   </section>
 
-  <!-- تذييل -->
+  <!-- زر واتساب -->
+  <a href="https://wa.me/966501234567" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- التذييل -->
   <footer>
-    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <p>© 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/digitaleyeteam" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/DigitalEyeTeam" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/digitaleyeteam" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 
   <!-- سكربت القائمة -->
