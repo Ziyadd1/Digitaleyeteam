@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="تعرف على خدمات Digital Eye Team في التصوير، التسويق، والتصميم.">
-  <title>الخدمات | Digital Eye Team</title>
+  <title>خدماتنا | Digital Eye Team</title>
+  <meta name="description" content="استعرض خدماتنا في التصوير، التسويق، التصميم وأكثر">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- رأس الصفحة -->
   <header>
-    <div class="logo">Digital Eye Team</div>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Digital Eye Logo" class="logo-img" />
+      <div class="logo-text">Digital Eye Team</div>
+    </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav>
       <ul id="nav-menu">
@@ -25,33 +29,57 @@
     </nav>
   </header>
 
-  <!-- قسم الغلاف -->
+  <!-- قسم البطل للخدمات -->
   <section class="services-hero">
     <div class="services-overlay"></div>
     <div class="services-content">
       <h2>خدماتنا</h2>
-      <p>نقدّم حلولًا إبداعية شاملة في التصوير والتسويق وصناعة المحتوى.</p>
+      <p>نقدّم حلولًا إبداعية تلبي احتياجاتك في الإعلام والتسويق الرقمي</p>
     </div>
   </section>
 
-  <!-- تفاصيل الخدمات -->
-  <section style="padding: 60px 20px; max-width: 1000px; margin: auto;">
-    <ul style="list-style: none; padding-right: 0;">
-      <li><strong>التصوير الاحترافي:</strong> تغطية فوتوغرافية وفيديو بأعلى جودة.</li>
-      <li><strong>المونتاج والإخراج:</strong> إخراج مرئي احترافي للمناسبات والمشاريع.</li>
-      <li><strong>التسويق الرقمي:</strong> إدارة الحملات على منصات التواصل والإعلانات المدفوعة.</li>
-      <li><strong>تصميم الهوية البصرية:</strong> من الشعار إلى الأدلة البصرية المتكاملة.</li>
-      <li><strong>إدارة المحتوى:</strong> صياغة وجدولة منشورات ذات تأثير واحترافية.</li>
-    </ul>
-
-    <a href="contact.html" class="btn">ابدأ تعاونك معنا</a>
+  <!-- قسم الخدمات -->
+  <section class="services-section">
+    <div class="container">
+      <div class="service">
+        <i class="fas fa-camera-retro"></i>
+        <h3>التصوير الاحترافي</h3>
+        <p>جلسات تصوير، تغطيات مناسبات، تصوير منتجات باحترافية عالية</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-video"></i>
+        <h3>إنتاج الفيديو</h3>
+        <p>مونتاج احترافي، مقاطع ترويجية، فيديوهات قصيرة وطويلة</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-bullhorn"></i>
+        <h3>التسويق الرقمي</h3>
+        <p>إعلانات ممولة، خطط تسويق إلكتروني، حملات ترويجية</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-pen-nib"></i>
+        <h3>التصميم الجرافيكي</h3>
+        <p>هويات بصرية، منشورات، بوسترات، تصميم احترافي متكامل</p>
+      </div>
+    </div>
   </section>
+
+  <!-- زر واتساب -->
+  <a href="https://wa.me/966501234567" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- التذييل -->
   <footer>
-    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <p>© 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/digitaleyeteam" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/DigitalEyeTeam" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/digitaleyeteam" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 
+  <!-- سكربت القائمة -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
