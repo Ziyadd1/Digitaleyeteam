@@ -3,57 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="استعرض أبرز أعمال فريق Digital Eye في الفعاليات والتغطيات الإعلامية.">
-  <title>أعمالنا | Digital Eye Team</title>
+  <title>من نحن | Digital Eye Team</title>
+  <meta name="description" content="تعرف على فريق Digital Eye ورؤيته وقيمه">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- رأس الصفحة -->
   <header>
-    <div class="logo">Digital Eye Team</div>
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Digital Eye Logo" class="logo-img" />
+      <div class="logo-text">Digital Eye Team</div>
+    </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav>
       <ul id="nav-menu">
         <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="about.html">من نحن</a></li>
-        <li><a href="portfolio.html" class="active">أعمالنا</a></li>
+        <li><a href="about.html" class="active">من نحن</a></li>
+        <li><a href="portfolio.html">أعمالنا</a></li>
         <li><a href="services.html">الخدمات</a></li>
         <li><a href="contact.html">اتصل بنا</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- قسم الأعمال -->
-  <section class="portfolio-hero">
-    <div class="portfolio-overlay"></div>
-    <div class="portfolio-content">
-      <h2>نماذج من أعمالنا</h2>
-      <p>نسلّط الضوء على أبرز المشاريع التي نفذناها في التصوير والتسويق والتغطيات الإعلامية.</p>
+  <!-- قسم من نحن -->
+  <section class="about-section">
+    <div class="about-container">
+      <h1>من نحن</h1>
+      <p>
+        Digital Eye Team هو فريق إعلامي سعودي طموح، أُسس بشغف لتقديم خدمات التصوير، التغطية، التسويق، والتصميم الإبداعي.
+        بدأت القصة من طموح الأستاذ سعود، الذي قرر عام 2023 تأسيس هذا الفريق، مؤمنًا بموهبته في التصوير والمونتاج،
+        رغم التحديات الدراسية والتضحيات، حتى استطاع تشكيل كيان إبداعي متخصص يجمع نخبة من المواهب.
+      </p>
+
+      <h2>رؤيتنا</h2>
+      <p>
+        أن نصبح من أبرز الفرق الإعلامية السعودية، ونسهم في تحقيق رؤية 2030 من خلال تطوير المحتوى الإعلامي المحلي،
+        وتقديم خدمات إبداعية بمعايير عالمية.
+      </p>
+
+      <h2>قيمنا</h2>
+      <ul>
+        <li>الإبداع والاحترافية</li>
+        <li>الالتزام والثقة</li>
+        <li>العمل الجماعي وروح الفريق</li>
+        <li>مواكبة التطور التقني والإعلامي</li>
+      </ul>
+
+      <h2>شغفنا</h2>
+      <p>
+        نؤمن أن كل مشروع ننفذه هو فرصة لخلق تجربة بصرية مؤثرة، وأن كل عضو بالفريق يساهم في صناعة قصة تُحكى بالصوت والصورة.
+        نطوّر أنفسنا باستمرار، ونطمح أن نضع بصمتنا في كل فعالية، حملة، أو إنتاج نقوم به.
+      </p>
     </div>
   </section>
 
-  <!-- قائمة الأعمال -->
-  <section style="padding: 60px 20px; max-width: 1000px; margin: auto;">
-    <ul style="list-style: none; padding-right: 0;">
-      <li><strong>فعالية عذق:</strong> تغطية تصويرية وتسويقية شاملة</li>
-      <li><strong>فعالية بهجة وغبقة:</strong> إدارة وتوثيق الحدث بالكامل</li>
-      <li><strong>مشروع رؤية 2030:</strong> تعاون إعلامي مع نادي الإعلام بجامعة الإمام</li>
-      <li><strong>تغطيات خاصة:</strong> وزارة الدفاع، جامعة الإمام، وغيرها</li>
-    </ul>
+  <!-- زر واتساب -->
+  <a href="https://wa.me/966501234567" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-    <a href="https://drive.google.com/drive/folders/1Jr95wWW8Th7ppfDJ8CeUcXI8Ic1MITvM?usp=share_link" 
-       target="_blank" class="btn">
-      استعرض المزيد عبر Google Drive
-    </a>
-  </section>
-
-  <!-- تذييل -->
+  <!-- التذييل -->
   <footer>
-    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <p>© 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/digitaleyeteam" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/DigitalEyeTeam" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/digitaleyeteam" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
 
+  <!-- سكربت القائمة -->
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
