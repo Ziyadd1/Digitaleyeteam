@@ -84,15 +84,15 @@ nav ul li a:hover {
 }
 
 .hero {
-  background-image: url('Hero-bg.jpg');
+  background-image: url('hero-bg.jpg');
 }
 
 .portfolio-hero {
-  background-image: url('Portfolio-bg.jpg');
+  background-image: url('portfolio-bg.jpg');
 }
 
 .services-hero {
-  background-image: url('Services-bg.jpg');
+  background-image: url('services-bg.jpg');
 }
 
 .hero-overlay, .portfolio-overlay, .services-overlay {
