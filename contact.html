@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>اتصل بنا | Digital Eye Team</title>
-  <meta name="description" content="تواصل معنا عبر النموذج أو وسائل التواصل الاجتماعية">
+  <meta name="description" content="تواصل مع فريق Digital Eye Team لطلب الخدمات أو الاستفسارات الإعلامية.">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -29,38 +28,46 @@
     </nav>
   </header>
 
-  <!-- قسم اتصل بنا -->
-  <section class="contact-section">
-    <div class="container">
-      <h2>تواصل معنا</h2>
-      <p>نرحب باستفساراتكم واقتراحاتكم في أي وقت</p>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label for="name">الاسم:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">البريد الإلكتروني:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">رسالتك:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" class="btn">إرسال</button>
-      </form>
+  <!-- قسم البطل -->
+  <section class="hero contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>تواصل معنا</h1>
+      <p>نحن هنا للإجابة عن استفساراتكم وتقديم أفضل خدماتنا الإعلامية</p>
     </div>
   </section>
 
-  <!-- زر واتساب -->
-  <a href="https://wa.me/966501234567" class="whatsapp-button" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <!-- نموذج التواصل -->
+  <section style="padding: 50px 20px; max-width: 600px; margin: auto;">
+    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <label for="name">الاسم</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">رسالتك</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">إرسال</button>
+    </form>
+  </section>
+
+  <!-- روابط التواصل -->
+  <section style="text-align: center; padding: 20px;">
+    <p>أو تواصل معنا عبر واتساب مباشرة:</p>
+    <a href="https://wa.me/966500000000" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> تواصل واتساب
+    </a>
+  </section>
 
   <!-- التذييل -->
   <footer>
     <p>© 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
     <div class="social-icons">
-      <a href="https://instagram.com/digitaleyeteam" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://x.com/DigitalEyeTeam" target="_blank"><i class="fab fa-x-twitter"></i></a>
-      <a href="https://www.linkedin.com/company/digitaleyeteam" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
   </footer>
 
