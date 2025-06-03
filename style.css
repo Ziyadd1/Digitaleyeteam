@@ -1,4 +1,4 @@
-/* ========== إعدادات عامة ========== */
+/* ========== الإعدادات العامة ========== */
 * {
   margin: 0;
   padding: 0;
@@ -6,33 +6,35 @@
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   background-color: #fff;
   color: #333;
   direction: rtl;
+  line-height: 1.6;
 }
 
-/* ========== رأس الصفحة ========== */
+/* ========== الرأس (Header) ========== */
 header {
   background-color: #000;
-  padding: 15px 20px;
   color: #FFD700;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .logo-img {
-  height: 40px;
   width: 40px;
+  height: 40px;
+  margin-left: 10px;
 }
 
 .logo-text {
@@ -40,19 +42,13 @@ header {
   font-size: 20px;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  color: #FFD700;
-  cursor: pointer;
-}
-
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+}
+
+nav ul li {
+  margin-left: 20px;
 }
 
 nav ul li a {
@@ -66,12 +62,25 @@ nav ul li a:hover {
   color: #FFD700;
 }
 
-/* ========== قسم البطل ========== */
-.hero {
-  background-image: url('hero-bg.jpg');
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========== أقسام البطل ========== */
+.hero,
+.portfolio-hero,
+.services-hero,
+.about-hero,
+.contact-hero {
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -79,100 +88,96 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.hero {
+  background-image: url('images/hero-bg.jpg');
+}
+
+.portfolio-hero {
+  background-image: url('images/portfolio-bg.jpg');
+}
+
+.services-hero {
+  background-image: url('images/services-bg.jpg');
+}
+
+.about-hero {
+  background-image: url('images/about-bg.jpg');
+}
+
+.contact-hero {
+  background-image: url('images/contact-bg.jpg');
+}
+
 .hero-overlay {
   position: absolute;
-  top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
 }
 
 .hero-content {
   position: relative;
-  color: #fff;
   z-index: 2;
-  max-width: 600px;
+  color: #fff;
   padding: 0 20px;
 }
 
 .hero-content h1 {
   font-size: 36px;
-  color: #FFD700;
   margin-bottom: 20px;
+  color: #FFD700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content p {
   font-size: 20px;
-  margin-bottom: 25px;
+  color: #eee;
 }
 
-/* ========== زر ========== */
+/* ========== الأزرار ========== */
 .btn {
+  display: inline-block;
+  padding: 12px 24px;
   background-color: #FFD700;
   color: #000;
-  padding: 12px 24px;
-  border-radius: 5px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
 .btn:hover {
   background-color: #e6c200;
 }
 
-/* ========== قسم الإعلانات ========== */
-.announcements {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.announcement-box {
-  overflow: hidden;
-  height: 40px;
-  margin-top: 20px;
-  position: relative;
-}
-
-.announcement-list {
+/* ========== النماذج ========== */
+form {
   display: flex;
   flex-direction: column;
-  animation: scrollAnnouncements 9s linear infinite;
 }
 
-.announcement-item {
-  padding: 10px;
+form label {
+  margin-bottom: 5px;
   font-weight: bold;
-  color: #000;
 }
 
-@keyframes scrollAnnouncements {
-  0%   { transform: translateY(0); }
-  33%  { transform: translateY(-40px); }
-  66%  { transform: translateY(-80px); }
-  100% { transform: translateY(0); }
+form input,
+form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-/* ========== زر واتساب ========== */
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #25D366;
-  color: white;
-  font-size: 24px;
-  padding: 12px 16px;
-  border-radius: 50%;
-  text-align: center;
-  z-index: 999;
-}
-
-/* ========== التذييل ========== */
+/* ========== الفوتر ========== */
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
   padding: 20px;
+  font-size: 14px;
 }
 
 .social-icons {
@@ -186,20 +191,20 @@ footer {
   text-decoration: none;
 }
 
-/* ========== استجابة الهاتف ========== */
+/* ========== استجابة الهواتف ========== */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: flex-start;
     display: none;
-    width: 100%;
-    background-color: #000;
-    margin-top: 10px;
-    padding: 10px 0;
   }
 
   nav ul.active {
     display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
   }
 
   .menu-toggle {
@@ -212,5 +217,9 @@ footer {
 
   .hero-content p {
     font-size: 16px;
+  }
+
+  iframe {
+    height: 250px !important;
   }
 }
