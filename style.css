@@ -89,23 +89,23 @@ nav ul li a:hover {
 }
 
 .hero {
-  background-image: url('images/hero-bg.jpg');
+  background-image: url('hero-bg.jpg');
 }
 
 .portfolio-hero {
-  background-image: url('images/portfolio-bg.jpg');
+  background-image: url('portfolio-bg.jpg');
 }
 
 .services-hero {
-  background-image: url('images/services-bg.jpg');
+  background-image: url('services-bg.jpg');
 }
 
 .about-hero {
-  background-image: url('images/about-bg.jpg');
+  background-image: url('about-bg.jpg');
 }
 
 .contact-hero {
-  background-image: url('images/contact-bg.jpg');
+  background-image: url('contact-bg.jpg');
 }
 
 .hero-overlay {
