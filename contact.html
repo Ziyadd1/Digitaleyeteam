@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>اتصل بنا | Digital Eye Team</title>
-  <meta name="description" content="تواصل مع فريق Digital Eye Team لطلب الخدمات أو الاستفسارات الإعلامية.">
+  <meta name="description" content="تواصل مع فريق Digital Eye Team عبر البريد أو الواتساب أو النموذج.">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -13,7 +13,7 @@
   <!-- رأس الصفحة -->
   <header>
     <div class="logo-area">
-      <img src="images/logo.png" alt="Digital Eye Logo" class="logo-img" />
+      <img src="logo.png" alt="Digital Eye Logo" class="logo-img" />
       <div class="logo-text">Digital Eye Team</div>
     </div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -23,51 +23,55 @@
         <li><a href="about.html">من نحن</a></li>
         <li><a href="portfolio.html">أعمالنا</a></li>
         <li><a href="services.html">الخدمات</a></li>
+        <li><a href="pricing.html">التسعير</a></li>
         <li><a href="contact.html" class="active">اتصل بنا</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- قسم البطل -->
-  <section class="hero contact-hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>تواصل معنا</h1>
-      <p>نحن هنا للإجابة عن استفساراتكم وتقديم أفضل خدماتنا الإعلامية</p>
-    </div>
-  </section>
+  <!-- المحتوى -->
+  <main class="content">
+    <h1>📞 اتصل بنا</h1>
+    <p>يسعدنا تواصلك معنا، يمكنك مراسلتنا عبر الطرق التالية:</p>
 
-  <!-- نموذج التواصل -->
-  <section style="padding: 50px 20px; max-width: 600px; margin: auto;">
-    <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-      <label for="name">الاسم</label>
-      <input type="text" id="name" name="name" required />
+    <section>
+      <ul>
+        <li><strong>📱 واتساب:</strong> <a href="https://wa.me/966500000000" target="_blank">966500000000+</a></li>
+        <li><strong>✉️ بريد إلكتروني:</strong> <a href="mailto:info@digitaleyeteam.com">info@digitaleyeteam.com</a></li>
+        <li><strong>📍 مقرنا:</strong> الرياض، المملكة العربية السعودية</li>
+      </ul>
+    </section>
 
-      <label for="email">البريد الإلكتروني</label>
-      <input type="email" id="email" name="email" required />
+    <section>
+      <h2>📬 نموذج تواصل سريع</h2>
+      <form>
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="message">رسالتك</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
 
-      <button type="submit" class="btn">إرسال</button>
-    </form>
-  </section>
+        <label for="message">رسالتك:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-  <!-- روابط التواصل -->
-  <section style="text-align: center; padding: 20px;">
-    <p>أو تواصل معنا عبر واتساب مباشرة:</p>
-    <a href="https://wa.me/966500000000" class="btn" target="_blank">
-      <i class="fab fa-whatsapp"></i> تواصل واتساب
-    </a>
-  </section>
+        <button type="submit">إرسال</button>
+      </form>
+      <p style="color: red; font-size: 14px;">* هذا النموذج لا يعمل حاليًا إلا إذا ربطته بـ backend.</p>
+    </section>
+  </main>
+
+  <!-- زر واتساب -->
+  <a href="https://wa.me/966500000000" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- التذييل -->
   <footer>
-    <p>© 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
+    <p>&copy; 2025 Digital Eye Team – جميع الحقوق محفوظة</p>
     <div class="social-icons">
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://instagram.com/digitaleyeteam" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/DigitalEyeTeam" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/digitaleyeteam" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </footer>
 
@@ -78,13 +82,6 @@
       menu.classList.toggle('active');
     }
   </script>
-
-  <script src="script.js"></script>
-
-  <!-- زر واتساب عائم -->
-<a href="https://wa.me/966500000000" class="whatsapp-float" target="_blank">
-  <i class="fab fa-whatsapp"></i>
-</a>
 
 </body>
 </html>
