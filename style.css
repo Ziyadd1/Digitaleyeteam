@@ -1,4 +1,4 @@
-/* ========== الإعدادات العامة ========== */
+/* إعدادات عامة */
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +9,11 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #fff;
   color: #333;
-  direction: rtl;
   line-height: 1.6;
+  direction: rtl;
 }
 
-/* ========== الرأس (Header) ========== */
+/* رأس الصفحة */
 header {
   background-color: #000;
   color: #FFD700;
@@ -29,12 +29,12 @@ header {
 .logo-area {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .logo-img {
   width: 40px;
   height: 40px;
-  margin-left: 10px;
 }
 
 .logo-text {
@@ -64,23 +64,18 @@ nav ul li a:hover {
 
 .menu-toggle {
   display: none;
-  font-size: 28px;
+  font-size: 26px;
   color: #FFD700;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-/* ========== أقسام البطل ========== */
-.hero,
-.portfolio-hero,
-.services-hero,
-.about-hero,
-.contact-hero {
+/* أقسام الخلفيات */
+.hero, .portfolio-hero, .services-hero {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -89,54 +84,50 @@ nav ul li a:hover {
 }
 
 .hero {
-  background-image: url('hero-bg.jpg');
+  background-image: url('Hero-bg.jpg');
 }
 
 .portfolio-hero {
-  background-image: url('portfolio-bg.jpg');
+  background-image: url('Portfolio-bg.jpg');
 }
 
 .services-hero {
-  background-image: url('services-bg.jpg');
+  background-image: url('Services-bg.jpg');
 }
 
-.about-hero {
-  background-image: url('about-bg.jpg');
-}
-
-.contact-hero {
-  background-image: url('contact-bg.jpg');
-}
-
-.hero-overlay {
+.hero-overlay, .portfolio-overlay, .services-overlay {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  top: 0;
-  left: 0;
 }
 
-.hero-content {
+.hero-content, .portfolio-content, .services-content {
   position: relative;
   z-index: 2;
   color: #fff;
   padding: 0 20px;
 }
 
-.hero-content h1 {
+.hero-content h1,
+.portfolio-content h1,
+.services-content h1 {
   font-size: 36px;
-  margin-bottom: 20px;
   color: #FFD700;
+  margin-bottom: 15px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.hero-content p {
-  font-size: 20px;
+.hero-content p,
+.portfolio-content p,
+.services-content p {
+  font-size: 18px;
   color: #eee;
 }
 
-/* ========== الأزرار ========== */
+/* الأزرار */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -145,53 +136,124 @@ nav ul li a:hover {
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .btn:hover {
   background-color: #e6c200;
 }
 
-/* ========== النماذج ========== */
+/* المحتوى */
+.content {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content h1, .content h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.content p, .content ul {
+  font-size: 17px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.content ul {
+  list-style: disc;
+  padding-right: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
 }
 
-form label {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-form input,
-form textarea {
+input, textarea {
   padding: 10px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-/* ========== الفوتر ========== */
+button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
+}
+
+/* فيديو */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* زر واتساب */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 999;
+}
+
+/* التذييل */
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 14px;
-}
-
-.social-icons {
-  margin-top: 10px;
 }
 
 .social-icons a {
   color: #FFD700;
   margin: 0 10px;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 18px;
 }
 
-/* ========== استجابة الهواتف ========== */
+/* شريط الإعلانات */
+.announcements {
+  background-color: #111;
+  color: #FFD700;
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.announcement-text {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/* استجابة الشاشات الصغيرة */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -204,41 +266,36 @@ footer {
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin-bottom: 10px;
   }
 
   .menu-toggle {
     display: block;
   }
 
-  .hero-content h1 {
-    font-size: 28px;
+  .hero-content h1,
+  .portfolio-content h1,
+  .services-content h1 {
+    font-size: 26px;
   }
 
-  .hero-content p {
+  .hero-content p,
+  .portfolio-content p,
+  .services-content p {
     font-size: 16px;
   }
 
-  iframe {
-    height: 250px !important;
+  .logo-text {
+    font-size: 16px;
   }
-}
 
-.announcements {
-  background-color: #111;
-  color: #FFD700;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 
-.announcement-text {
-  animation: fade 1s ease-in-out;
-}
-
-@keyframes fade {
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+  .whatsapp-button {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
