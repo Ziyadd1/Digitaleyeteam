@@ -223,3 +223,22 @@ footer {
     height: 250px !important;
   }
 }
+
+.announcements {
+  background-color: #111;
+  color: #FFD700;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.announcement-text {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
